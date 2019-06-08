@@ -216,6 +216,17 @@ footer .navbar-burger span {
             background-size: cover;
 }
 
+#services .flex-block {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#services .column {
+    padding-top: 10px;
+}
+
 #services h3 {
     font-size: 1.25rem;
     margin: 2.5rem 0 2rem;

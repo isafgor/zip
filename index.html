@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width", inital-scale="1.0">
-    <title>Спецбух</title>
+    <title>Зарубин и Партнеры</title>
     <base target="_blank">
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,10 +28,10 @@
                 <div id="NavMenu" class="navbar-menu">
                     <div class="navbar-start navbar-end">
                         <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/logo.png" width="86" height="86"></a>
-                        <a class="navbar-item" href="#headerwrap">Главная</a>
-                        <a class="navbar-item" href="#accounting">Услуги</a>
-                        <a class="navbar-item" href="#contacts">Контакты</a>
-                        <a class="navbar-item" href="#price">Цены</a>
+                        <a class="navbar-item" onclick="slowScroll(headerwrap)">Главная</a>
+                        <a class="navbar-item" onclick="slowScroll(services)">Услуги</a>
+                        <a class="navbar-item" onclick="slowScroll(price)">Цены</a>
+                        <a class="navbar-item" onclick="slowScroll(contacts)">Контакты</a>
                     </div>
                 </div>
                 <div class="navbar-menu">
@@ -63,56 +63,12 @@
                         </button>
                     </div>
                 </div>
-                <a href="#accounting"><i class="fa fa-angle-double-down"></i></a>
+                <a onclick="slowScroll(services)"><i class="fa fa-angle-double-down"></i></a>
             </div>
         </div>
     </header>
 
     <main>
-        <div id="accounting">
-            <div class="container has-text-centered">
-                <div class="columns is-centered is-mobile">
-                    <div class="is-6-tablet">
-                        <h2>Бухучет и отчетность</h2>
-                        <div class="undertitle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-centered is-mobile">
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-1.png">
-                        <h3>Торговля</h3>
-                    </div>
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-2.png">
-                        <h3>Общепит</h3>
-                    </div>
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-3.png">
-                        <h3>Строительство</h3>
-                    </div>
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-4.png">
-                        <h3>IT-услуги</h3>
-                    </div>
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-5.png">
-                        <h3>Производство</h3>
-                    </div>
-                    <div class="column is-6-mobile is-3-tablet">
-                        <img src="img/b-ico-6.png">
-                        <h3>Услуги<br><span>(В том числе транстпортные)</span></h3>
-                    </div>
-                </div>
-                <button class="button js-button-campaing">
-                    <span class="icon"><i class="fa fa-phone"></i></span>
-                    <span>Заказать услугу</span>
-                </button>
-            </div>
-        </div>
         <div id="services">
             <div class="container has-text-centered">
                 <div class="columns is-centered is-mobile">
@@ -128,48 +84,51 @@
                 <div class="columns is-multiline is-mobile">
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-1.png">
-                        <p>Консультации по любым вопросам<br>отвечаем в течение 1 часа</p>
+                        <p>Вы платите как за одного юриста,<br>а получаете два отдела</p>
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-2.png">
-                        <p>Подготовка документов:<br>платёжки, акты, накладные </p> 
+                        <p>Решение проблем в области:<br>налоговых споров, правового
+                            обеспечения, экспертизы и составления юридических документов, 
+                            организации документооборота и кадрового делопроизводства </p> 
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-3.png">
-                        <p>Доставка и получение документов от контрагентов</p>    
+                        <p>Вам не нужно нести расходы на штатного юриста</p>    
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-4.png">
-                        <p>Архивирование документов</p>    
+                        <p>Отсутствует необходимость несения затрат по организации рабочего места
+                            юриста</p>    
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-5.png">
-                        <p>Ведение ВЭД</p>    
+                        <p>Возможность юридической консультации в любое время</p>    
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-6.png">
-                        <p>Поддержка расчётных счетов в любых банках</p>    
+                        <p>Оперативное оказание юридической помощи</p>    
                     </div>
                 </div>
-                <h3>Компания спецбух предоставляет</h3>
+                <h3>Компания "Зарубин и Партнеры"</h3>
                 <div id="services-bottom" class="columns is-multiline is-centered is-gapless is-mobile">
                     <div class="column is-6-mobile is-4-tablet">
-                        <i class="fa fa-certificate"></i><span class="multiline">Открытие<br>ООО и ИП</span>
+                        <i class="fa fa-certificate"></i><span class="multiline">Всесторонняя <br> защита</span>
                     </div>
-                    <div class="column is-6-mobile is-4-tablet">
-                        <i class="fa fa-certificate"></i><span>Обслуживание 1С</span>
-                    </div>
-                    <div class="column is-hidden-mobile is-4-tablet">
-                        <i class="fa fa-certificate"></i><span class="multiline">У нас можно приобрести<br>Электронную подпись (ЭЦП)</span>
+                    <div class="column is-6-mobile is-4-tablet flex-block">
+                        <i class="fa fa-certificate"></i><span>Мы отслеживаем изменения <br> законодательства</span>
                     </div>
                     <div class="column is-hidden-mobile is-4-tablet">
-                        <i class="fa fa-certificate"></i><span class="multiline">Регистрация ККГ в<br>ФНС и ОФД</span>
+                        <i class="fa fa-certificate"></i><span class="multiline">Мы работаем только после заключения <br> официального договора</span>
                     </div>
-                    <div class="column is-6-mobile is-4-tablet">
-                        <i class="fa fa-certificate"></i><span>Продажа 1С</span>
+                    <div class="column is-hidden-mobile is-4-tablet">
+                        <i class="fa fa-certificate"></i><span class="multiline">Мы несем финансовую <br> ответственность за свои ошибки</span>
+                    </div>
+                    <div class="column is-6-mobile is-4-tablet flex-block">
+                        <i class="fa fa-certificate"></i><span>Наша компания не учится на Вашем бизнесе<br> Мы – это решение Вашей проблемы</span>
                     </div>
                     <div class="column is-6-mobile is-hidden-tablet">
-                        <i class="fa fa-certificate"></i><span class="multiline">Регистрация ККГ в<br>ФНС и ОФД</span>
+                        <i class="fa fa-certificate"></i><span class="multiline">Мы несем финансовую <br> ответственность за свои ошибки</span>
                     </div>
                     <div class="column is-6-mobile is-hidden-tablet">
                         <i class="fa fa-certificate"></i><span class="multiline">У нас можно приобрести<br>Электронную подпись (ЭЦП)</span>
@@ -606,6 +565,17 @@
                 <h2>Наш адрес:</h2>
                 <p>улица Восстания, 102А</p>
                 <br>
+                <div class="call-info">
+
+                    <p>
+                        Мы перезвоним Вам в течении 15 минут 
+                        <br>
+                        <b>Пн-Пт</b>
+                        <br>
+                        <i>9:00</i> - <i>18:00</i>
+                    </p>
+                </div>
+                <br>
                 <div class="control">
                     <button class="button is-normal js-button-campaing">
                         <span class="icon">
@@ -636,10 +606,10 @@
                 <div id="NavMenu" class="navbar-menu">
                     <div class="navbar-start navbar-end">
                         <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/gooter-logo.png" width="86" height="86"></a>
-                        <a class="navbar-item" href="#headerwrap">Главная</a>
-                        <a class="navbar-item" href="#accounting">Услуги</a>
-                        <a class="navbar-item" href="#contacts">Контакты</a>
-                        <a class="navbar-item" href="#price">Цены</a>
+                        <a class="navbar-item" onclick="slowScroll(headerwrap)">Главная</a>
+                        <a class="navbar-item" onclick="slowScroll(services)">Услуги</a>
+                        <a class="navbar-item" onclick="slowScroll(price)">Цены</a>
+                        <a class="navbar-item" onclick="slowScroll(contacts)">Контакты</a>
                     </div>
                 </div>
                 <div class="navbar-menu">
