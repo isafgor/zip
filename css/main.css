@@ -1,3 +1,6 @@
+/* * {
+    overflow: hidden;
+} */
 body {
     background-color: #ffffff;
     font-family: 'MuseoSansRegular', sans-serif;
@@ -495,6 +498,34 @@ footer .cont > a {
     position: absolute;
     top: 0.93rem;
     right: 0.93rem;
+}
+
+.success,
+.unsuccess {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.success__text {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.5);
+    color: #000;
+    border-radius: 3px;
+    padding: 20px;
+    width: 566px;
+    margin: 0 auto;
+}
+
+.unsuccess__text {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.5);
+    color: #000;
+    border-radius: 3px;
+    padding: 20px;
+    width: 566px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {

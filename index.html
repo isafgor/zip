@@ -9,13 +9,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
                 <div class="navbar-brand is-hidden-desktop" style="font-weight: bold; font-family: 'MuseoSansBlack', sans-serif;">
-                    <a href="index.html" style="margin-left: 20px;"><img src="img/logo.png" width="86" height="86"></a>
+                    <a href="index.html" style="margin-left: 20px;"><img src="img/header-logo.png" width="86" height="86"></a>
                     <a class="navbar-item" style="font-size: 13px;"><img src="img/phone.png" style="margin-right: 10px;">8 (917) 864-37-01<br><br>8 (966) 240-51-81</a>
                     <a class="navbar-item" style="font-size: 13px; margin-left: -20px;">Казань</a>
 
@@ -27,7 +45,7 @@
                 </div>
                 <div id="NavMenu" class="navbar-menu">
                     <div class="navbar-start navbar-end">
-                        <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/logo.png" width="86" height="86"></a>
+                        <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/header-logo.png" width="116"></a>
                         <a class="navbar-item" onclick="slowScroll(headerwrap)">Главная</a>
                         <a class="navbar-item" onclick="slowScroll(services)">Услуги</a>
                         <a class="navbar-item" onclick="slowScroll(price)">Цены</a>
@@ -59,7 +77,7 @@
                     <div class="column is-12-mobile is-9-tablet is-6-desktop">
                         <button class="button is-medium js-button-campaing">
                             <span class="icon"><i class="fa fa-certificate"></i></span>
-                            <span>Заказать консультацию</span>
+                            <span>Заказать звонок</span>
                         </button>
                     </div>
                 </div>
@@ -88,9 +106,8 @@
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-2.png">
-                        <p>Решение проблем в области:<br>налоговых споров, правового
-                            обеспечения, экспертизы и составления юридических документов, 
-                            организации документооборота и кадрового делопроизводства </p> 
+                        <p>Решение проблем в любой области права,<br>
+                            правовое обслуживание, экспертизы и составление юридических документов и т.д... делопроизводств, представительство в суде </p> 
                     </div>
                     <div class="column is-6-mobile is-4-tablet">
                         <img src="img/n-ico-3.png">
@@ -605,7 +622,7 @@
                     </div>
                 <div id="NavMenu" class="navbar-menu">
                     <div class="navbar-start navbar-end">
-                        <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/gooter-logo.png" width="86" height="86"></a>
+                        <a class="is-hidden-mobile" style="margin: 0 40px 0 0;" href="index.html"><img src="img/footer-logo.png" width="126"></a>
                         <a class="navbar-item" onclick="slowScroll(headerwrap)">Главная</a>
                         <a class="navbar-item" onclick="slowScroll(services)">Услуги</a>
                         <a class="navbar-item" onclick="slowScroll(price)">Цены</a>
@@ -626,14 +643,14 @@
 
     <div id="fixed-overlay" class="js-overlay-campaing">
         <div class="overlay">
-            <div class="popup js-popup-campaing has-text-centered">
+            <form method="POST" action="contact.php" class="popup js-popup-campaing has-text-centered ajax-contact-form">
                 <h2>Заказать звонок</h2>
                 <div class="field">
                     <div class="control">
                         <input class="input is-normal" type="text" name="name" placeholder="Имя" required>
                     </div>
                     <div class="control">
-                        <input class="input is-normal" type="tel" name="tel" placeholder="Контактный телефон" required>
+                        <input class="input is-normal" type="tel" name="phone" placeholder="Контактный телефон" required>
                     </div>
                     <div class="control">
                         <button class="button is-normal">
@@ -645,11 +662,22 @@
                     </div>
                 </div>
                 <a class="delete"></a>
-            </div>
+            </form>
+        </div>
+    </div>
+    <div class="success">
+        <div class="success__text">
+            Ваше сообщение отправлено. С Вами свяжутся в течении 15 минут!
+        </div>
+    </div>
+    <div class="unsuccess">
+        <div class="unsuccess__text">
+            При отправке сообщения возникла ошибка. Пожалуйста, повторите запрос позднее.
         </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contactform.js"></script>
 </body>
 </html>
